@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALE AI PHOTO EDITOR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>CALE AI</h1>
+    <p>AI PHOTO EDITOR</p>
+  </header>
+
+  <main class="container">
+
+    <section class="upload-section">
+      <h2>Upload Your Photo</h2>
+
+      <input
+        type="file"
+        id="imageInput"
+        accept="image/*"
+      >
+
+      <div id="uploadPreview">
+        <img id="originalImage" alt="Your uploaded photo">
+      </div>
+    </section>
+
+    <section class="prompt-section">
+      <h2>Describe Your Edit</h2>
+
+      <textarea
+        id="promptInput"
+        placeholder="Example: Change background to a beautiful sunset..."
+      ></textarea>
+
+      <button id="editButton">Prepare My Edit</button>
+    </section>
+
+    <section class="result-section">
+      <h2>Your Result</h2>
+
+      <div id="resultPlaceholder">
+        Your edited photo will appear here.
+      </div>
+
+      <img id="resultImage" alt="Edited photo">
+
+      <button id="downloadButton">Download Photo</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Powered by CALE AI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
